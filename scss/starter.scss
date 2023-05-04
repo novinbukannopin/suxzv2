@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -18,7 +17,7 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -31,7 +30,7 @@ $enable-shadows: true;
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+$border-radius: 0.4rem;
 $success: #7952b3;
 
 @import "bootstrap/scss/functions"; // Required
@@ -73,18 +72,111 @@ $success: #7952b3;
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
-
 //
 // Custom styles
 //
 
 @import "icon-list";
 
-body {
-  padding: 3rem 1.5rem;
-}
-
 // Style Bootstrap icons
+*,
+body {
+  font-family: "Manrope", sans-serif;
+}
 .bi {
   fill: currentcolor;
+}
+
+.text-brand {
+  color: black;
+  // font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #394360;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.btn-primary-custom {
+  background-color: #8c82fc;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-secondary-custom {
+  background-color: none;
+  color: #8c82fc;
+  font-weight: 600;
+}
+
+.tagline-text {
+  color: #8c82fc;
+  font-weight: bold;
+  font-size: 20px;
+}
+.title-text {
+  color: black;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.description-hero-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #222831;
+}
+
+.bg-gray-section {
+  background-color: #f8f8ff;
+}
+
+.menu-text-title {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.card-package-item {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  color: #22293e;
+  width: 100%;
+  transition: 0.3s;
+  h4 {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .btn-item {
+    margin-top: 40px;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    background-color: #44e4c9;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+  }
+}
+.card-package-item:hover {
+  background-color: #8c82fc;
+  h4 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.gx-5 {
+  gap: 20px;
 }
