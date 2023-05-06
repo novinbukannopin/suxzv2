@@ -183,6 +183,35 @@ p {
     border-radius: 7px;
   }
 }
+.card-user-testi {
+  width: auto;
+  height: 305px;
+  border: 3px solid #8c82fc;
+  border-radius: 10px;
+  z-index: 0;
+  margin-top: -38px;
+  padding: 10px 0;
+  .card-user-testi-content {
+    margin-top: 50px;
+    .card-user-testi-name {
+      font-weight: 700;
+      font-size: 22px;
+    }
+    .card-user-testi-job {
+      font-weight: 500;
+      font-size: 15px;
+      color: #bab8d2;
+    }
+  }
+  .card-user-testi-detail {
+    font-weight: 500;
+    font-size: 17px;
+  }
+}
+
+.img-card-user-testi {
+  z-index: 1;
+}
 
 .gx-10 {
   gap: 55px;
